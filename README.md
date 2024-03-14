@@ -1,1 +1,2 @@
-# reda_v3
+# Project for a educational resources website 
+live-site : www.reda.azores.gov.pt
