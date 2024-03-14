@@ -1,0 +1,134 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password%100",
+    "database": "reda_3",
+    "host": "localhost",
+    "dialect": "mysql",
+    "maxConcurrentQueries": 100,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "define": {
+      "underscored": true,
+      "charset": "utf8",
+      "collate": "utf8_general_ci"
+    },
+    "typeValidation": true,
+    "omitNull": false,
+    "paranoid": true,
+    "mailer": {
+      "pool": true,
+      "host": "",
+      "port": 465,
+      "secure": true,
+      "auth": {
+          "user": "",
+          "pass": ""
+      }
+    },
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "nodejs",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "staging": {
+    "username": "root",
+    "password": "password%100",
+    "database": "reda_3",
+    "host": "localhost",
+    "dialect": "mysql",
+    "maxConcurrentQueries": 100,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "define": {
+      "underscored": true,
+      "charset": "utf8",
+      "collate": "utf8_general_ci"
+    },
+    "typeValidation": true,
+    "omitNull": false,
+    "paranoid": true,
+    "logging": false,
+    "mailer": {
+      "pool": true,
+      "host": "",
+      "port": 465,
+      "secure": true,
+      "auth": {
+          "user": "",
+          "pass": ""
+      }
+    },
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379
+    }
+  },
+  "production": {
+    "username": "reda",
+    "password": "cFDTX6TAsX6AcvLt",
+    "database": "reda_3",
+    "host": "localhost",
+    "dialect": "mysql",
+    "maxConcurrentQueries": 100,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "define": {
+      "underscored": true,
+      "charset": "utf8",
+      "collate": "utf8_general_ci"
+    },
+    "typeValidation": true,
+    "omitNull": false,
+    "paranoid": true,
+    "logging": false,
+    "mailer": {
+      "pool": true,
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "secure": false,
+      "auth": {
+          "user": "s0204.nit@gmail.com",
+          "pass": "uqdvvgwafbtxabwm"
+      }
+    },
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379
+    }
+  },
+  "secret": "lakjshdkasdasd",
+  "limit": 9,
+  "files_path": "public/files/",
+  "techEmail": "tec.reda@azores.gov.pt",
+  "techName": "Técnico da Reda",
+  "teamEmail2": "dre.rea@edu.azores.gov.pt",
+  "teamEmail": "recursos.e.digitais@gmail.com",
+  "teamName": "Equipa REDA",
+  "recaptcha": "6LdgvSUTAAAAAPoH2-5Dt4kC13zhXxiIgq_pRks_",
+  "interactors": [
+    "admin", "teacher", "editor"
+  ],
+  "maxFileSize": 20971520,
+  "maxScriptFileSize": 20971520,
+  "maxThumbFileSize": 734003
+}

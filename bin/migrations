@@ -1,0 +1,71 @@
+#!/usr/bin/env node
+
+/**
+ * RUN AS FOLLOWS:
+ * node ./bin/scripts <script_name> <file_name_without_extension>
+ *
+ */
+const models = require('../server/models/index');
+const { debug } = require('../server/utils/dataManipulation');
+const logger = require('../server/utils/logger').Logger;
+
+const MigrateRedaController = require('../server/controllers/migrations/migrateRedaController');
+
+// Sync sequelize DB before start
+// CHANGE THIS IN PRODUCTION TO {force:false}
+models.sequelize.sync({force:false})
+.then(async () => {
+  console.log("Starting migrations");
+
+  //  ======================================================================
+  //  RUN FUNCTIONS
+  //  ======================================================================
+  let data = [];
+  let results = [];
+  try{
+
+      results.push(await MigrateRedaController.users());
+      results.push(await MigrateRedaController.terms()); 
+      results.push(await MigrateRedaController.resources()); 
+      results.push(await MigrateRedaController.images());
+      results.push(await MigrateRedaController.comments());
+      results.push(await MigrateRedaController.generic());
+      results.push(await MigrateRedaController.apps());
+      results.push(await MigrateRedaController.scripts());
+
+      let errs = [];
+      
+      results.map(row => {
+          if(row && row.errs!=null){
+            errs = errs.concat(row.errs);
+          }
+          if(row && row.data!=null){
+              data.push(row.data);
+          }
+      })
+
+      // Return errors if any
+      if(errs.length>0){
+        debug(errs,'migration','errors');
+        logger.error(JSON.stringify(errs, null, 2));
+        process.exit();
+      }
+
+      debug("Done!",'migration');
+
+      /* debug(data,'migration','data'); */
+      logger.info(JSON.stringify(data, null, 2));
+
+      process.exit();
+      
+  }catch(err){
+      debug(err,'migration','errors');
+      logger.error(JSON.stringify(err, null, 2));
+      process.exit();
+  }
+})
+.catch( err => {
+  debug(err,'migration','errors');
+  logger.error(JSON.stringify(err, null, 2));
+  process.exit();
+})

@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /documentation
+Disallow: /nginx_status
+Disallow: /api

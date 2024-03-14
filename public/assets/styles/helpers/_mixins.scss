@@ -1,0 +1,361 @@
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@mixin media($arg) {
+  @if $arg == screen {
+    @media #{$screen} { @content; }
+  }
+  @if $arg == landscape {
+    @media #{$screen} and (orientation: landscape) { @content; }
+  }
+  @if $arg == portrait {
+    @media #{$screen} and (orientation: portrait) { @content; }
+  }
+  @if $arg == xsmall-up {
+    @media #{$screen} and (min-width: lower-bound($xsmall-range)) { @content; }
+  }
+  @if $arg == xsmall-only {
+    @media #{$screen} and (max-width: upper-bound($xsmall-range)) { @content; }
+  }
+  @if $arg == small-up {
+    @media #{$screen} and (min-width: lower-bound($small-range)) { @content; }
+  }
+  @if $arg == small-down {
+    @media #{$screen} and (max-width: upper-bound($small-range)) { @content; }
+  }
+  @if $arg == small-only {
+    @media #{$screen} and (min-width: lower-bound($small-range)) and (max-width: upper-bound($small-range)) { @content; }
+  }
+  @if $arg == medium-up {
+    @media #{$screen} and (min-width: lower-bound($medium-range)) { @content; }
+  }
+  @if $arg == medium-down {
+    @media #{$screen} and (max-width: upper-bound($medium-range)) { @content; }
+  }
+  @if $arg == medium-only {
+    @media #{$screen} and (min-width: lower-bound($medium-range)) and (max-width: upper-bound($medium-range)) { @content; }
+  }
+  @if $arg == large-up {
+    @media #{$screen} and (min-width: lower-bound($large-range)) { @content; }
+  }
+  @if $arg == large-only {
+    @media #{$screen} and (min-width: lower-bound($large-range)) and (max-width: upper-bound($large-range)) { @content; }
+  }
+  @if $arg == xlarge-up {
+    @media #{$screen} and (min-width: lower-bound($xlarge-range)) { @content; }
+  }
+  @if $arg == xlarge-only {
+    @media #{$screen} and (min-width: lower-bound($xlarge-range)) and (max-width: upper-bound($xlarge-range)) { @content; }
+  }
+  @if $arg == xxlarge-up {
+    @media #{$screen} and (min-width: lower-bound($xxlarge-range)) { @content; }
+  }
+}
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin media-query-min($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+@mixin media-query-range($device1, $device2) {
+    @media screen and (min-width: $device1) and (max-width:$device2) {
+        @content;
+    }
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+ @mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+/* ==========================================================================
+   Styling
+   ========================================================================== */
+
+/*
+*
+* ANIMATION
+* 
+*/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin effect($effect){
+  -webkit-animation-name:$effect;
+  animation-name:$effect;
+}
+
+@mixin animated($time){
+  -webkit-animation-duration: $time;
+  animation-duration: $time;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/**
+ *
+ *TRANSFORM
+ * 
+ */
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin translate($args...) {
+  -webkit-transform: translate($args);
+  -moz-transform: translate($args);
+  -ms-transform: translate($args);
+  -o-transform: translate($args);
+  transform: translate($args);
+}
+
+@mixin translateY($arg) {
+  -webkit-transform: translateY($arg);
+  -moz-transform: translateY($arg);
+  -ms-transform: translateY($arg);
+  -o-transform: translateY($arg);
+  transform: translateY($arg);
+}
+
+@mixin translateX($arg) {
+  -webkit-transform: translateX($arg);
+  -moz-transform: translateX($arg);
+  -ms-transform: translateX($arg);
+  -o-transform: translateX($arg);
+  transform: translateX($arg);
+}
+
+@mixin transform-scale($arg){
+    -webkit-transform: scale($arg);
+    -moz-transform   : scale($arg);
+    -o-transform     : scale($arg);
+    -ms-transform    : scale($arg);
+    transform        : scale($arg);
+}
+
+@mixin scaleY($arg){
+    -webkit-transform: scaleY($arg);
+    -moz-transform   : scaleY($arg);
+    -o-transform     : scaleY($arg);
+    -ms-transform    : scaleY($arg);
+    transform        : scaleY($arg);
+}
+
+@mixin scaleX($arg){
+    -webkit-transform: scaleX($arg);
+    -moz-transform   : scaleX($arg);
+    -o-transform     : scaleX($arg);
+    -ms-transform    : scaleX($arg);
+    transform        : scaleX($arg);
+}
+
+@mixin transform-origin($arg){
+    -webkit-transform-origin : $arg;
+    -ms-transform-origin     : $arg;
+    transform-origin         : $arg;
+}
+
+@mixin transform-skew($x:0, $y:0){
+    -webkit-transform: skew($x + deg, $y + deg) ;
+    -moz-transform   : skew($x + deg, $y + deg) ;
+    -o-transform     : skew($x + deg, $y + deg) ;
+    -ms-transform    : skew($x + deg, $y + deg) ;
+    transform        : skew($x + deg, $y + deg) ;
+}
+
+@mixin transform-rotate($val){
+    @if($val != null){
+        -webkit-transform: rotate($val + deg) ;
+        -moz-transform   : rotate($val + deg) ;
+        -o-transform     : rotate($val + deg) ;
+        -ms-transform    : rotate($val + deg) ;
+        transform        : rotate($val + deg) ;
+    }
+}
+
+/**
+ *
+ * KEYFRAME ANIMATION
+ * 
+ */
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+/**
+ *
+ * BORDER
+ * 
+ */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius!important;
+  border-radius: $radius!important;
+}
+
+/**
+ *
+ * RETINA READY
+ * 
+ */
+/*
+div.logo {
+   background: url("logo.png") no-repeat;
+   @include image-2x("logo2x.png", 100px, 25px);
+ }
+ */
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+/**
+ *
+ * OPACITY
+ * 
+ */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/**
+ *
+ * BOX SHADOW
+ * 
+ */
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+/**
+ *
+ * USER SELECT
+ * 
+ */
+@mixin user-select($arg){
+  -webkit-user-select: $arg;
+  -moz-user-select: $arg;
+  -ms-user-select: $arg;
+  user-select: $arg;
+}
+
+/**
+ *
+ * GENERIC LINKS
+ * 
+ */
+@mixin generic-links(){
+  a{
+    color:$active-el!important;
+    @include transition(all 200ms ease);
+
+    &:hover{
+      text-decoration:none!important;
+      @include opacity(0.6);
+    }
+  }
+}
+
+/**
+ *
+ * CHANGE PLACEHOLDER COLOR
+ * 
+ */
+@mixin placeholder-color($color){
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color:  $color;
+      font-style:italic;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    $color;
+     opacity:  1;
+      font-style:italic;
+
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    $color;
+     opacity:  1;
+      font-style:italic;
+
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color:    $color;
+      font-style:italic;
+     
+  }
+}
+
+/**
+ *
+ * CALC FUNCTION
+ *
+ */
+ @mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+/**
+ *
+ * FILTERS
+ * 
+ */
+@mixin filter($arg){
+  -webkit-filter: $arg;
+  -moz-filter: $arg;
+  filter: $arg;
+}

@@ -1,0 +1,96 @@
+site_name: REDA
+pages:
+  - Home: index.md
+  - Webserver Config: nginx.md
+  - API: 
+    - Getting Started:                .\api\api.md
+    - Authentication:
+      - Sign Up:                      .\api\user\signup.md
+      - Sign Up Confirmation:         .\api\user\signup-confirmation.md
+      - Sign In:                      .\api\user\signin.md
+      - Profile:                      .\api\user\profile.md
+      - Update Profile:               .\api\user\update-profile.md
+      - Request Password Recover:     .\api\user\request-recover.md
+      - Change Password:              .\api\user\change-recover-password.md
+    - Resources:
+      - Generic List:                 .\api\resources\resources-list.md
+      - This month list:              .\api\resources\resources-month.md
+      - Recent:                       .\api\resources\resources-recent.md
+      - Highlights:                   .\api\resources\resources-highlight.md
+      - Related:                      .\api\resources\resources-related.md
+      - Search:                       .\api\resources\resources-search.md
+      - Details:                      .\api\resources\resources-details.md
+      - Resource Comments:            .\api\resources\resources-comments.md
+      - Create or Update:             .\api\resources\resources-newupdate.md
+      - Async validation:             .\api\resources\resources-asyncValidate.md
+      - Set Highlight:                .\api\resources\resources-setHighlight.md
+      - Set Favorite:                 .\api\resources\resources-setFavorite.md
+      - Set Rating:                   .\api\resources\resources-setRating.md
+      - Moderation:                   .\api\resources\resources-setApproved.md
+      - Undo Moderation:              .\api\resources\resources-undoApproved.md
+      - Delete One or Collection:     .\api\resources\resources-delete.md
+    - Scripts (Operation Proposals):
+      - Search:                       .\api\scripts\search.md
+      - Resource Scripts:             .\api\scripts\resource-scripts.md
+      - Script Details:               .\api\scripts\single-details.md
+      - User Scripts from Resource:   .\api\scripts\user-scripts.md
+      - Create or Update List:        .\api\scripts\createUpdate-list.md
+      - Create or Update one:         .\api\scripts\createUpdate-single.md
+      - Moderation:                   .\api\scripts\scripts-setApproved.md
+      - Undo Moderation:              .\api\scripts\scripts-undoApproved.md
+      - Delete One or Collection:     .\api\scripts\delete.md
+    - Applications:
+      - Generic List:                 .\api\apps\apps-list.md
+      - This month list:              .\api\apps\apps-month.md
+      - Search:                       .\api\apps\search.md
+      - Details:                      .\api\apps\details.md
+      - Create or Update:             .\api\apps\create-update.md
+      - Moderation:                   .\api\apps\apps-setApproved.md
+      - Undo Moderation:              .\api\apps\apps-undoApproved.md
+      - Delete One or Collection:     .\api\apps\delete.md
+    - Tools:
+      - Generic List:                 .\api\tools\tools-list.md
+      - This month list:              .\api\tools\tools-month.md
+      - Search:                       .\api\tools\search.md
+      - Details:                      .\api\tools\details.md
+      - Create or Update:             .\api\tools\create-update.md
+      - Moderation:                   .\api\tools\tools-setApproved.md
+      - Undo Moderation:              .\api\tools\tools-undoApproved.md
+      - Delete One or Collection:     .\api\tools\delete.md
+    - Comments:
+      - List:                         .\api\comments\list.md
+      - Add New:                      .\api\comments\create-update.md
+      - Get pending:                  .\api\comments\pending.md
+      - Has Bad Words:                .\api\comments\check-badwords.md
+      - Moderation:                   .\api\comments\approved.md
+      - Delete:                       .\api\comments\delete.md
+    - Terms:
+      - List:                         .\api\terms\list.md
+      - Create or update:             .\api\terms\create-update.md
+      - Delete:                       .\api\terms\delete.md
+    - Taxonomies:
+      - List:                         .\api\taxs\list.md
+      - Search:                       .\api\taxs\search.md
+      - Details:                      .\api\taxs\details.md
+      - Terms:                        .\api\taxs\terms.md
+    - Terms relationships:
+      - List:                         .\api\relationships\list.md
+      - Create or update:             .\api\relationships\create-update.md
+      - Delete:                       .\api\relationships\delete.md
+    - News:
+      - List:                         .\api\news\list.md
+      - Details:                      .\api\news\details.md
+      - Create or update:             .\api\news\create-update.md
+      - Delete:                       .\api\news\delete.md
+    - Contacts:
+      - List:                         .\api\contacts\list.md
+      - Resource contacts:            .\api\contacts\resource-contacts.md
+      - Create:                       .\api\contacts\create.md
+      - Mark as read:                 .\api\contacts\mark-read.md
+    - Approval Messages:
+      - List:                         .\api\messages\list.md
+    - Feedback:
+      - Send form data:               .\api\feedback\send.md
+
+theme: readthedocs
+extra_css: [css/extra.css]

@@ -1,0 +1,35 @@
+.tech-page-container{
+	.teams{
+		padding:30px 0;
+
+		h1{
+			padding-top:0;
+			margin-top:0;
+			line-height:1.5;
+		}
+
+		figure{
+			margin-top:30px;
+			margin-bottom:30px;
+		}
+
+		ul{
+			li{
+				margin-bottom:10px;
+				line-height:1.5;
+			}
+		}
+	}
+
+	h5{
+		margin-top:30px;
+	}
+
+	.partners{
+		padding-bottom:60px;
+		img{
+			max-height:150px;
+			display:inline-block;
+		}
+	}
+}

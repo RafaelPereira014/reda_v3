@@ -1,0 +1,7 @@
+.border{
+  &__left{
+    &--light{
+      border-left: 1px solid $light-background;
+    }
+  }
+}

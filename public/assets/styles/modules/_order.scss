@@ -1,0 +1,22 @@
+.ordering{
+	select{
+		width:auto;
+		border-radius:0!important;
+		display:inline-block;
+		margin-bottom:15px;
+		
+		@include media(small-down){
+			max-width:150px;
+		}
+
+		@include media-query(xsmall-only){
+			max-width:125px;
+		}
+		
+	}
+
+	label{
+		padding-right:10px;
+	}
+	text-align:right;
+}

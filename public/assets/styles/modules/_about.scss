@@ -1,0 +1,156 @@
+.about{
+	&__buttons{
+		padding-bottom:30px;
+		margin-bottom:30px;
+
+		a,
+		button{
+			& + a,
+			& + button{
+				margin-left:30px;
+			}
+		}
+
+		@include media(xsmall-only){
+			button{
+			    display: block;
+			    margin: 0 auto;
+			}
+			a{
+				display:block;
+			    margin: 15px 0 0!important;
+			}
+		}
+	}
+
+	&__options{
+
+		h1{
+			margin:60px 0 30px;
+		}
+
+		article{
+			padding:40px 20px 60px;
+		}		
+
+		i{
+			color:$green;
+			@include font-size(40px);
+			margin-bottom:30px;
+		}
+
+		p{
+			margin-bottom:30px;
+		}
+	}
+
+	&__contribute{
+		background-color:$green;
+
+		*{
+			color:white;
+		}
+
+		h1{
+			margin-top:0;
+		}
+
+		p{
+			margin:30px 0;
+		}
+
+		.container{
+			display:table;
+		}
+
+		&--left,
+		&--right{
+			width:50%;
+
+			@include media(small-down){
+				display:block;
+				width:100%;
+			}
+		}
+
+		&--left{
+			display:table-cell;
+			padding:60px 0;
+			vertical-align: middle;
+		}
+
+		&--right{
+			@include media(small-down){
+				display:none;
+			}
+
+			display:table-cell;
+			vertical-align: bottom;
+			text-align:center;
+			img{
+				position:relative;
+				bottom:0;
+				max-width:75%;
+			}
+		}
+	}
+
+	&__videos{
+		padding:60px 0;
+
+		h1{
+			padding-top:0;
+			margin-top:0;
+		}
+
+		p{
+			margin-bottom:45px;
+		}
+
+		&--buttons{
+			margin-top:30px;
+		}
+	}
+
+	&__search{
+		width:100%;
+		text-align:center;
+		padding-top:60px;
+
+		h1{
+			margin-top:0;
+			padding-top:0;
+		}
+
+		.search-container{
+			margin:60px 0 80px;
+		}
+
+		footer{
+			overflow-x:hidden;
+			display:none;
+
+			img{
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__visualidentity{
+		width:100%;
+		background: url('../graphics/bg/identity-bg.jpg') no-repeat;
+		background-size: cover;
+		background-position:center center;
+		padding:30px 0 40px;
+	
+		h1,p{
+			color:white;
+		}
+
+		p{
+			margin-top:30px;
+			margin-bottom:30px;
+			line-height:1.5;
+		}		
+	}
+}

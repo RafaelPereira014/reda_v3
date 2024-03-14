@@ -1,0 +1,24 @@
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after{
+    font-family: 'Font Awesome\ 5 Free'!important;
+    font-weight: 900;
+}
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+
+.new_word_form{
+    &:not(div){
+        #new_word_input{
+            max-width: 300px;
+            display: inline-block;
+        }
+    }
+}
+
+select{
+    min-width:100px;
+}

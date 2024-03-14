@@ -1,0 +1,45 @@
+.video__modal{
+
+	.modal-content{
+		width:100%;
+		height:100%;
+	}
+
+	.modal-body{
+		padding-top:0;
+	}
+
+	.modal-header{
+		border:none;
+	}
+
+	iframe{
+		border:none;
+		width:100%;
+		height:315px;
+	}
+}
+
+.videos__container{
+	article{
+
+		margin-bottom:30px;
+
+		button{
+			padding:0;
+			background:white;
+			border:1px solid $meta-color;
+			font-family: $opensans;
+		}
+
+		figure{
+			figcaption{
+				padding:20px;
+			}
+		}
+	}
+
+	.video__open{
+		max-width:700px;
+	}
+}

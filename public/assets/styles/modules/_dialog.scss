@@ -1,0 +1,154 @@
+.modal-backdrop{
+  position:fixed!important;
+	bottom:0;
+	z-index: 1;
+
+  &:hover{
+    cursor:pointer;
+  }
+}
+
+.backdrop{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background-color:black;
+  @include opacity(0.5);
+  z-index:10;
+  display:none;
+
+  &:hover{
+    cursor:pointer;
+  }
+
+  @include media(medium-up){
+    display:none!important;
+  }
+}
+
+.external__connection{
+	text-align:center;
+}
+
+.login-dialog,
+.modal{
+	.modal-header{
+		border:none;
+
+		section{
+			display:block;			
+			width:100px;
+			height:100px;
+			@include font-size(48px);
+			color:$light-green;
+			text-align: center;
+			line-height: 1.9;
+			
+			margin: 0 auto;
+
+			border:2px solid $light-green;
+			border-radius: 50%;			
+		}
+	}
+
+	.modal-title{
+		text-align:center;
+		margin-top:20px;
+	}
+
+	.modal-footer{
+		border:none;
+		text-align: center;
+
+		p{
+			color:$soft-label-color;
+
+			@include font-size(12px);
+
+			font-family:$opensans;
+		}
+
+		.cta + .cta{
+			margin-left:15px;
+		}
+
+		.cta{
+			margin-bottom:10px;
+		}
+	}
+	
+	.modal-dialog:not(.video__modal):not(.login-dialog){
+		.modal-body{
+			max-width:450px;
+		}		
+	}
+
+	.login-dialog{
+		.modal-body{
+			max-width:350px;
+		}	
+	}
+
+	.modal-body{
+		
+		margin:0 auto;
+
+		p,
+		pre{
+			//text-align:center;
+			font: {
+				family:$opensans;
+			}
+
+			color:$soft-label-color;
+
+			@include font-size(14px);
+			line-height:1.7;
+		}
+	}
+
+	small{
+	  @include font-size(10px);
+	  color:$meta-color;
+	}
+
+	.confirm-messages{
+		span{
+			display:block;
+			padding:10px 0 15px;
+		}
+	}
+}
+
+.disapprove-dialog,
+.fullwidth-dialog{
+	width:90%;
+
+	.modal-body{
+		max-width:90%!important;
+	}
+}
+
+.script-dialog{
+	pre{
+		white-space: pre-wrap;       /* Since CSS 2.1 */
+	    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	    white-space: -pre-wrap;      /* Opera 4-6 */
+	    white-space: -o-pre-wrap;    /* Opera 7 */
+	    /* word-wrap: break-word;  
+        word-break: normal; */
+	    word-break: break-word; 
+	    background:none;
+	    padding:0;
+	    border:none;
+
+	}
+}
+
+.popup-textarea{
+  width:100%;
+  padding:10px 10px;
+  @include font-size(12px);
+}

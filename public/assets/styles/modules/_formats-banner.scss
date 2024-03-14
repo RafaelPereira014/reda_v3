@@ -1,0 +1,75 @@
+.formats{
+	background-color:$light-green;
+	text-align:center;	
+
+	.slick-dots{
+		position:static!important;
+		padding-bottom:15px;
+
+		li{
+			&.slick-active,
+			&:hover,
+			&:active,
+			&:focus{
+				button{
+					&:before{
+						color:white;
+					}
+				}
+			}
+		}
+	}
+
+	img{
+		height:50px;
+		margin:0 auto 20px;
+	}
+
+	span{
+		font:{
+			family: $lato;
+			size: em(20);
+		}
+		color:white;
+	}
+
+	&__element{
+		display:block;
+		padding:30px 0 15px;
+		@include transition(all 0.3s ease);
+
+		&:hover{
+			text-decoration: none;
+			opacity: 0.5;
+			cursor:pointer;
+		}
+	}
+
+	@include media(small-down){
+		img{
+			height:30px;
+			margin:0 auto 10px;
+		}
+
+		span{
+			font:{
+				size: em(18);
+			}
+		}
+
+		&__element{
+			padding:20px 0;
+		}
+	}
+
+	.owl-theme{
+		.owl-controls{
+			margin:0 0 15px 0;
+			.owl-pagination{
+				span{
+					background-color:white;
+				}				
+			}
+		}
+	}
+}

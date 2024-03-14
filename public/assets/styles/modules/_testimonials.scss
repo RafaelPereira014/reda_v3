@@ -1,0 +1,41 @@
+.testimonials{
+	&__container{
+		margin-bottom:30px;
+
+		.slick-dots{
+			bottom:-10px!important;
+		}
+	}
+
+	&__element{
+		border:none;
+		
+		p{
+			@include font-size(14px);
+			font-style: italic;
+			text-align:center;
+
+			&:before,
+			&:after {
+			    font-family: FontAwesome;
+			    font-style: normal;
+			    font-weight: normal;
+			    padding: 5px;
+			    font-size: 16px;
+			    font-size: 1rem;
+			}
+
+			&:before{
+				content: "\f10d";
+			}
+
+			&:after{
+				content: "\f10e";
+			}
+		}
+
+		footer{
+			text-align:center;
+		}
+	}
+}

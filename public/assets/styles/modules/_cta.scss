@@ -1,0 +1,298 @@
+.btn{
+	border-radius: 0;
+}
+
+.cta{
+	line-height: 1.2;
+	display:inline-block;
+	@include font-size(14px);
+
+	border:none;
+	padding:10px 20px;	
+
+	@include transition(all 0.3s ease);
+
+	&:not(.delete-action) i{
+		margin-right:10px;
+	}
+
+	&.big{
+		@include font-size(16px);
+	}
+
+	&:disabled,
+	&:disabled:hover{
+		opacity: 0.5!important;
+	}
+
+	&.block{
+		display:block;
+	}
+
+	&.primary{
+		color:white;
+		background-color:$green;
+		border:1px solid $green;
+
+		&.outline,&.no-border{
+			color:$green;			
+
+			&:hover{
+				background-color:$green;
+				color:white;
+			}
+		}
+
+		&.no-bg,&.outline{
+			color:$green;
+			border-color:$green;
+		}
+
+		&:not(.no-border):not(.outline):hover{
+			opacity: 0.8;
+			text-decoration:none;
+		}
+	}
+
+	&.secundary{
+		color:white;
+		background-color:$light-green;
+		border:1px solid $light-green;
+
+		&.outline,&.no-border{
+			color:$light-green;
+		}
+
+		&.no-bg{
+			color:$light-green;
+			border-color:$light-green;
+		}
+	}
+
+	&.white{
+		color:$soft-label-color;
+		background-color:white;
+
+		&.outline,&.no-border{
+			color:white;
+			border-color:white;
+
+			&:hover,
+			&.active{
+				background-color:white;
+				color:$soft-label-color;
+			}
+		}
+
+		&.no-bg{
+			color:white;
+			border-color:white;
+		}
+
+		&:not(.outline):not(.no-border):hover{
+			opacity: 0.8;
+			text-decoration:none;
+		}
+	}
+
+	&.gray{
+		color:$soft-label-color;
+		background-color:$light-background;
+
+		&.outline,&.no-border{
+			color:$light-background;
+			border-color:$light-background;
+
+			&:hover,
+			&.active{
+				background-color:$light-background;
+				color:$soft-label-color;
+			}
+		}
+
+		&.no-bg{
+			color:$light-background;
+			border-color:$light-background;
+		}
+
+		&:not(.outline):not(.no-border):hover{
+			opacity: 0.8;
+			text-decoration:none;
+		}
+	}
+
+	&.black{
+		color:white;
+		background-color:$body-color;
+
+		&.outline,&.no-border{
+			color:$body-color;
+			border-color:$body-color;
+
+			&:hover,
+			&.active{
+				background-color:$body-color;
+				color:white;
+			}
+		}
+
+		&.no-bg{
+			color:$body-color;
+			border-color:$body-color;
+		}
+
+		&:not(.outline):not(.no-border):hover{
+			opacity: 0.8;
+			text-decoration:none;
+		}
+	}
+	&.yellow{
+		color:white;
+		background-color:#7e5e00;
+
+		&.outline,&.no-border{
+			color:#7e5e00;
+			border-color:#7e5e00;
+			&:hover,
+			&.active{
+				background-color:#7e5e00;
+				color:white;
+			}
+		}
+
+		&.no-bg{
+			color:#7e5e00;
+			border-color:#7e5e00;
+		}
+
+		&:not(.outline):not(.no-border):hover{
+			opacity: 0.8;
+			text-decoration:none;
+		}
+	}
+
+	&.no-bg{
+		background:none;
+		border:none;
+		color:$green;
+
+		&:hover{
+			text-decoration: underline!important;
+		}
+	}
+
+	&.small{
+		@include font-size(12px);
+		padding:8px 10px;
+	}
+
+	&.outline{
+		background:none;
+		border:1px solid;
+	}
+
+	&.no-border{
+		border-color:transparent!important;
+	}
+
+	&:hover,
+	&:active,
+	&:focus{
+		opacity: 0.8;
+		text-decoration:none;
+	}
+
+	&:hover{
+		cursor:pointer;
+	}
+
+	&.delete-action{
+		color:$danger-color!important;
+	}
+
+	&.warning{
+		border:1px solid cv(warning, dark);
+		background-color:$warning-color!important;
+		color:cv(warning-text);
+	}
+
+	&.simple{
+		padding:0;
+	}
+}
+
+.protected-button{
+	width: 100%;
+	
+	button{
+		/* padding:0;
+		margin:0; */
+		background:none;
+		border:none;
+		display:block;
+		
+
+		&:active,
+		&:focus{
+			outline: none;
+		}
+
+		&:not(.cta){
+			width:100%;
+			text-align: left;
+		}
+	}
+}
+
+/* Make protected button paddings and margins right */
+.list__element{
+	& > .protected-button{
+		button:not(.action-btn){
+			margin:0;
+			padding:0;
+		}
+	}
+}
+
+
+.action-btn{
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+//	=======================================================
+//	Cookie Notice
+//	=======================================================
+.react-cookie-law-accept-btn,
+.react-cookie-law-decline-btn{
+	margin:0 10px;
+	line-height: 1.2;
+	display:inline-block;
+	@include font-size(14px);
+
+	border:none;
+	padding:10px 20px;	
+
+	@include transition(all 0.3s ease);
+}
+
+.react-cookie-law-accept-btn{
+	color:white;
+	background-color: #719700;
+	border: 1px solid #719700;
+
+	&:hover{
+		opacity: 0.8;
+		text-decoration:none;
+	}
+}
+
+.react-cookie-law-decline-btn{
+	background: none;
+
+	&:hover{
+		opacity: 0.8;
+		text-decoration:underline;
+	}
+}

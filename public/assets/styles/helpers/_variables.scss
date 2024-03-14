@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+// Grays
+$heading-color: #1b1b1b;
+$body-color: #51504f;
+$soft-label-color: #6a696a;
+$meta-color: #b4b4b4; 
+$soft-border-color: #eee;
+
+// Dashboard
+$dashboard-body-color: #e5e5e5;
+$dashboard-header-color: #f5f5f5;
+
+// Greens 
+$dark-green: #55974d;
+$green: #83ae03;
+$light-green: #aec03f;
+
+// Backgrounds
+$light-background: #f1f0f0;
+
+// Stars rating
+$star-color:#eba600;
+
+// Status
+$danger-color: #d43f3a;
+$warning-color: #f1ea9d;
+$warning-text-color:#736e36;
+$pending-color:#ffa700;
+$reproved-color:red;
+$approved-color:$green;
+
+// Colors
+$colors: (
+	danger: $danger-color,
+ 	warning: $warning-color,
+ 	warning-text: $warning-text-color
+);
+
+$variations: (
+  light: (
+    function: lighten,
+    parameters: 15%
+  ),
+  dark: (
+    function: darken,
+    parameters: 10%
+  ),
+  fade: (
+    function: rgba,
+    parameters: 0.7
+  ),
+  gray: (
+    function: grayscale
+  ),
+  shade: (
+    function: mix,
+    parameters: white 80%
+  )
+);
+
+/* ==========================================================================
+   Decoration
+   ========================================================================== */
+
+// Boxes
+$box-shadow:#A7A7A7;
+
+/* ==========================================================================
+   Spacing and media queries
+   ========================================================================== */
+
+/* Media queries */
+
+$xsmall-range: (0, 768/16+em); // 0-48
+$small-range: (769/16+em, 992/16+em); // 48-62
+$medium-range: (993/16+em, 1200/16+em); // 62-75
+$large-range: (1201/16+em); // 75
+//$xlarge-range: (75em);
+
+$screen: "only screen";
+
+/* ==========================================================================
+   Steps
+   ========================================================================== */
+$margin-custom-step: 5;
+$padding-custom-step: 5;

@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+/**
+ * RUN AS FOLLOWS:
+ * node ./bin/scripts <script_name> <file_name_without_extension>
+ *
+ */
+const models = require('../server/models/index');
+
+const subjects = require('../server/importScripts/subjects');
+const terms = require('../server/importScripts/terms');
+
+// Sync sequelize DB before start
+// CHANGE THIS IN PRODUCTION TO {force:false}
+models.sequelize.sync({force:false}).then(function () {
+    // eslint-disable-next-line no-console
+    console.log("Starting scripts");
+
+    const scripts = {
+      subjects,
+      terms
+    };
+
+    let args = process.argv.slice(2);
+
+    scripts[args[0]].addToDb(args[1]);
+  
+  }).catch(function(err){
+    
+    // eslint-disable-next-line no-console
+    console.log(err);
+    process.exit();
+  });

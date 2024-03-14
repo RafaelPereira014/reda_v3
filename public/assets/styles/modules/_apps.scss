@@ -1,0 +1,42 @@
+.system__tabs{
+	ul{
+		margin:0;
+		padding:0;
+		text-align: center;
+
+		li + li{
+			margin-left:15px;
+		}
+	}	
+
+	margin-top:20px;
+
+	@include media(xsmall-only){
+		margin-top:30px;
+	}
+}
+
+.apps{
+	&__page{
+		footer{
+			button:not(.block){
+				width:auto!important;
+				display:inline-block!important;
+
+				i{
+					margin:0!important;
+					@include font-size(26px);
+					/* min-width:25px; */
+				}
+
+				/* &:hover{
+					i:before{
+						content: "\f019"!important;
+					}
+				} */
+
+				
+			}
+		}
+	}
+}

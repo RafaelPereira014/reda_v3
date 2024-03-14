@@ -1,0 +1,115 @@
+{
+	"terms": {
+		"acceptance": "Aceito os \"Termos e condições\" e autorizo que o conteúdo seja distribuído sob o termos da licença Creative Commons com a Atribuição designada como Atribuição-Não Comercial-Compartilha Igual (CC BY-NC-SA). <p>Ao fazê-lo:<ul><li>mantenho os direitos autorais do trabalho submetido;</li><li>sou o autor ou o proprietário da obra ou tenho a permissão do autor para a distribuir;</li><li>pretendo que este trabalho seja distribuído sob os termos da licença CC-BY-NC-SA.</li></ul></p>"
+	},
+	"explore": {
+		"title": "Estudantes",
+		"text": "Este espaço é para ti. <br/>Dos jogos aos museus virtuais, aqui encontrarás notícias e novidades de várias disciplinas, do 1.º ao 12.º ano. Também vais encontrar recursos que te vão ajudar a estudar o que aprendes na sala de aula.<br/>Poderás sugerir outras páginas e aplicações, utilizando o formulário de contacto (Fale connosco), partilhar nas tuas redes sociais ou enviar aos teus amigos.<br/>Aventura-te pelos sítios que encontrámos, para manteres a tua mente ativa!",
+		"button": "Experimenta",
+		"image": {
+			"src": "/assets/graphics/bg/explore.jpg",
+			"alt": "some alt"
+		}
+	},
+	"teacher": {
+		"title": "Professores",
+		"icon": "/assets/graphics/icons/lapis.svg",
+		"text": "Este espaço é para si. </br>A REDA tem um espaço dedicado a docentes, permitindo a partilha de conteúdos nas mais variadas áreas e domínios. Entre na plataforma e inicie a sua atividade num mundo de oportunidades.",
+		"button": {
+			"text": "Entre",
+			"type": "login"
+		},
+		"image": {
+			"src": "/assets/graphics/bg/teacher.jpg",
+			"alt": "some alt"
+		}
+	},
+	"student": {
+		"title": "Envia-nos as tuas sugestões",
+		"icon": "/assets/graphics/icons/conversa.svg",
+		"text": "Como aluno, pode não só aceder aos mais variados recursos disponíveis na plataforma, mas também enviar sugestões de novo conteúdo para os nossos administradores.",
+		"button": {
+			"text": "Envia sugestões",
+			"type": "feedback"
+		}
+	},
+	"headers": {
+		"aplicacoes": {
+			"title" : "Aplicações",
+			"description": "Descubra as aplicações para dispositivos móveis que encontrámos sobre educação, gestão de trabalho, jogos, formação, ciências, matemática, português, física e química. ",
+			"link": {
+				"url": "/novaaplicacao",
+				"title": "Nova aplicação",
+				"conditions": {
+					"interactors": true
+				}
+			}
+		},
+		"ligacoes": {
+			"sugestoes": {
+				"title": "Sugestões",
+				"description": "Aventure-se na descoberta de sítios de interesse na Internet sobre arte, curiosidades, formação, literacia, literatura, fundações, museus, repositórios e muito mais.", 
+				"link": {
+					"url": "/novaligacao/sugestoes",
+					"title": "Nova sugestão",
+					"conditions": {
+						"interactors": true
+					}
+				}
+			},
+			"experimenta": {
+				"title": "Experimenta",
+				"description": "Joga, aprende e pratica! Aventura-te!",
+				"link": {
+					"url": "/novaligacao/experimenta",
+					"title": "Nova ligação experimenta",
+					"conditions": {
+						"interactors": true
+					}
+				}
+			}
+		},
+		"ferramentas": {
+			"title" : "Ferramentas",
+			"description": "Consulte a nossa lista de “Ferramentas”, que poderá facilitar a utilização de recursos educativos digitais e a navegação na Internet.",
+			"link": {
+				"url": "/novaferramenta",
+				"title": "Nova ferramenta",
+				"conditions": {
+					"interactors": true
+				}
+			}
+		},
+		"sobre": {
+			"title" : "Procure os seus recursos",
+			"description": "Recursos Educativos Digitais e Abertos (REDA) é uma plataforma dedicada à disponibilização de conteúdos educativos para a comunidade escolar."
+		}
+	},
+	"testimonials": [
+		{
+			"id": 1,
+			"person": "Gustavo",
+			"description": "Os recursos que a professora trouxe foram muito benéficos, penso que para todos. Estes recursos foram muito úteis para entender as matérias mais abstratas e promovia um bom ambiente na sala de aula. Para além disso agradecemos o esforço e dedicação da professora em trazer os recursos, pois para além de muito bem organizados, eram giros e permitiam ver coisas lindas."
+		},
+		{
+			"id": 2,
+			"person": "Anónimo",
+			"description": "Na minha opinião os recursos educativos digitais tornaram as aulas mais interativas e interessantes.\nNo que diz respeito à aprendizagem acho que a tornam mais fácil e rápida.\nQuando em comparação com os manuais estes recursos permitem captar a nossa atenção durante mais tempo e consequentemente é mais rentável.\nQuando a matéria é explicada nos manuais peca-se um pouco em relação ao interesse e abstração."
+		},
+		{
+			"id": 3,
+			"person": "Anónimo",
+			"description": "Eu, na  minha opinião, acho que os recursos que a professora utilizou tornaram as aulas mais interativas e tornaram a compreensão da matéria muito mais eficaz, uma vez que sendo um meio digital capta melhor a atenção dos alunos."
+		},
+		{
+			"id": 4,
+			"person": "Anónimo",
+			"description": "Com a ajuda dos recursos digitais, as aulas tornaram-se mais divertidas e fáceis de compreender, ao contrário de se apenas tivéssemos utilizado os livros.\nEstes recursos deveriam continuar a ser utilizados de forma a interessar mais alunos e de os ajudar visualmente a perceber mais rapidamente."
+		},
+		{
+			"id": 5,
+			"person": "Anónimo",
+			"description": "Os recursos educativos digitais, foram uma forma divertida e excitante de aprender matemática. Além disso promovia um bom ambiente na sala de aula."
+		}
+	]
+}

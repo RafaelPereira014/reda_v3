@@ -1,0 +1,42 @@
+.link-tabs{
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+    li{
+        display: inline-block;
+
+        & + li{
+            margin-left:15px;
+        }
+
+        &.active{
+            a{
+                color: cv($dark-green);
+                border-bottom-width: 3px;
+                border-bottom-color: cv($dark-green);
+            }            
+        }
+
+        a{
+            @include transition(all 0.3s ease);
+            transform-origin: center center;
+            font-weight: 560;
+
+            padding: 5px 10px;
+            border-bottom:1px solid cv($soft-label-color);  
+            color: cv($body-color);
+
+            &:hover,
+            &:active,
+            &:focus{
+                border-bottom-width: 3px;
+                border-bottom-color: cv($dark-green);
+
+                color: cv($dark-green);
+                text-decoration:none;
+                
+            }
+        }
+    }
+}

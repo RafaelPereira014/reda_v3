@@ -1,0 +1,31 @@
+table{
+    width:100%;
+    background-color: white;
+    @include font-size(16px);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+
+
+    th,
+    td{
+        padding:15px 20px;
+        vertical-align: middle;
+    }
+
+    th{
+        background-color: cv($heading-color);
+        color:white;
+        font-weight:400;
+    }
+
+    &.stripped{
+        tr:nth-child(even){
+            background-color: cv($light-background);
+        }
+    }
+
+    tr{
+        &.new{
+            background-color: $soft-border-color;
+        }
+    }
+}

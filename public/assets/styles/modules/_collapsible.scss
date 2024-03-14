@@ -1,0 +1,21 @@
+.list{
+  &__collapsible{
+    width:100%;
+    button{
+      border:none;
+      background: none;
+      padding:0;
+      position:relative;
+      padding-right:60px;
+      text-align: left;
+
+      i{
+        position: absolute;
+        right:0;
+        top:50%;
+
+        @include translate(0%,-50%);
+      }
+    }
+  }
+}

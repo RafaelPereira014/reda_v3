@@ -1,0 +1,25 @@
+.pagination{
+    &>.active>a,
+    &>.active>span,
+    &>.active>a:hover,
+    &>.active>span:hover,
+    &>.active>a:focus,
+    &>.active>span:focus{
+        background-color: cv($dark-green);
+        border-color: cv($dark-green);
+        z-index:1!important;
+    }
+
+    &>li>a,
+    &>li>span{
+        color: cv($dark-green);
+        @include font-size(14px);
+
+        @include transition(all 0.3s ease);
+
+        &:hover,
+        &:focus{
+            color: cv($dark-green);
+        }
+    }
+}

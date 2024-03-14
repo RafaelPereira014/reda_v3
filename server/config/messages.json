@@ -1,0 +1,191 @@
+{
+	"generic": {
+		"access_permission": "Não tem permissões para aceder à informação solicitada",
+		"no_type": "Impossivel determinar o tipo de dados a inserir. Contate a equipa técnica."
+	},
+	"resource": {
+		"del_permission": "Não tem permissão para eliminar este recurso",
+		"no_exist": "Recurso não existe",
+		"del_no_exist": "Não existem recursos para eliminar",
+		"create_permission": "Não tem permissões para criar um novo recurso",
+		"save_error": "Não foi possível guardar o recurso",
+		"access_permission": "Não tem permissões para aceder a este recurso. Autentique-se primeiro na plataforma.",
+		"pending_permission": "De momento o recurso encontra-se pendente. Tente novamente mais tarde."
+	},
+	"resources": {
+		"del_permission": "Não tem permissão para eliminar estes recursos",
+		"no_exist": "Recursos não existem",
+		"del_no_exist": "Não existem recursos para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de recursos"
+	},
+	"script": {
+		"create_permission": "Não tem permissões para criar uma nova proposta",
+		"del_permission": "Não tem permissões para eliminar esta proposta",
+		"del_no_exist": "A proposta que está a tentar eliminar não existe",
+		"need_resource": "Deve fornecer o identificador da proposta. Contate a equipa técnica para resolver este problema.",
+		"access_permission": "Não tem permissões para aceder a essa proposta."
+	},
+	"scripts": {
+		"resource_access_permission": "Não tem permissões para obter os propostas deste recurso",
+		"del_permission": "Não tem permissões para eliminar a lista de propostas",
+		"del_no_exist": "Não existem propostas para eliminar",
+		"created_uploaded": "Propostas foram criadas/atualizadas",
+		"access_permission": "Não tem permissões para aceder à listagem de propostas."
+	},
+	"app": {
+		"del_permission": "Não tem permissão para eliminar esta aplicação",
+		"no_exist": "Aplicação não existe",
+		"del_no_exist": "Não existem aplicações para eliminar",
+		"create_permission": "Não tem permissões para criar uma nova aplicação",
+		"save_error": "Não foi possível guardar a aplicação",
+		"access_permission": "Não tem permissões para aceder a esta aplicação"
+	},
+	"apps": {
+		"del_permission": "Não tem permissão para eliminar estas aplicações",
+		"no_exist": "Aplicações não existem",
+		"del_no_exist": "Não existem aplicações para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de aplicações",
+		"no_system": "Não foi identificado nenhum sistema operativo"
+	},
+	"tool": {
+		"del_permission": "Não tem permissão para eliminar esta ferramenta",
+		"no_exist": "Ferramenta não existe",
+		"del_no_exist": "Não existem ligações para eliminar",
+		"create_permission": "Não tem permissões para criar uma nova ferramenta",
+		"save_error": "Não foi possível guardar a ferramenta",
+		"tool_type": "Deve especificar o tipo de ferramenta",
+		"access_permission": "Não tem permissões para aceder a esta ferramenta"
+	},
+	"tools": {
+		"del_permission": "Não tem permissão para eliminar estas ferramentas",
+		"no_exist": "Ferramentas não existem",
+		"del_no_exist": "Não existem ferramentas para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de ferramentas"
+	},
+	"hint": {
+		"del_permission": "Não tem permissão para eliminar esta dica",
+		"no_exist": "Dica não existe",
+		"del_no_exist": "Não existem dicas para eliminar",
+		"create_permission": "Não tem permissões para criar uma nova dica",
+		"save_error": "Não foi possível guardar a dica",
+		"access_permission": "Não tem permissões para aceder a esta dica"
+	},
+	"hints": {
+		"del_permission": "Não tem permissão para eliminar estas dicas",
+		"no_exist": "Dicas não existem",
+		"del_no_exist": "Não existem dicas para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de dicas"
+	},	
+	"taxonomy": {
+		"del_permission": "Não tem permissão para eliminar esta taxonomia",
+		"no_exist": "Taxonomia não existe",
+		"del_no_exist": "Não existem taxonomias para eliminar",
+		"create_permission": "Não tem permissões para criar uma nova taxonomia",
+		"save_error": "Não foi possível guardar a taxonomia",
+		"access_permission": "Não tem permissões para aceder a esta taxonomia"
+	},
+	"taxonomies": {
+		"del_permission": "Não tem permissão para eliminar estas taxonomias",
+		"no_exist": "Taxonomias não existem",
+		"del_no_exist": "Não existem taxonomias para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de taxonomias"
+	},
+	"news": {
+		"del_permission": "Não tem permissão para eliminar estas notícias",
+		"no_exist": "Notícias não existem",
+		"del_no_exist": "Não existem notícias para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de notícias"
+	},
+	"term": {
+		"del_permission": "Não tem permissão para eliminar este termo",
+		"no_exist": "Termo não existe",
+		"del_no_exist": "Não existem termos para eliminar",
+		"create_permission": "Não tem permissões para criar um novo termo",
+		"save_error": "Não foi possível guardar o termo",
+		"access_permission": "Não tem permissões para aceder a este termo"
+	},
+	"terms": {
+		"del_permission": "Não tem permissão para eliminar estes termos",
+		"no_exist": "Termos não existem",
+		"del_no_exist": "Não existem termos para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de termos"
+	},
+	"rels": {
+		"invalid_level": "O número total de níveis não é válido. Deve ser igual ou superior a 1"
+	},
+	"relationship": {
+		"del_permission": "Não tem permissão para eliminar esta relação",
+		"no_exist": "Relação não existe",
+		"del_no_exist": "Não existem relações para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta relação"
+	},
+	"comment": {
+		"del_permission": "Não tem permissão para eliminar este comentário",
+		"no_exist": "Comentário não existe",
+		"del_no_exist": "Não existem comentários para eliminar",
+		"create_permission": "Não tem permissões para criar um novo comentário",
+		"save_error": "Não foi possível guardar o comentário",
+		"access_permission": "Não tem permissões para aceder a este comentário",
+		"badwords": "O comentário não foi criado pois possui palavras proibidas"
+	},
+	"comments": {
+		"del_permission": "Não tem permissão para eliminar estes comentários",
+		"no_exist": "Comentários não existem",
+		"del_no_exist": "Não existem comentários para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de comentários"
+	},
+	"badword": {
+		"del_permission": "Não tem permissão para eliminar esta palavra",
+		"no_exist": "Palavra não existe",
+		"already_exists": "Palavra já existe",
+		"del_no_exist": "Não existem palavras para eliminar",
+		"create_permission": "Não tem permissões para criar uma nova palavra",
+		"save_error": "Não foi possível guardar a palavra",
+		"access_permission": "Não tem permissões para aceder a esta palavra. Autentique-se primeiro na plataforma."
+	},
+	"badwords": {
+		"del_permission": "Não tem permissão para eliminar estas palavras",
+		"no_exist": "Palavras não existem",
+		"del_no_exist": "Não existem palavras para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de palavras"
+	},
+	"contact": {
+		"del_permission": "Não tem permissão para eliminar esta mensagem de contato",
+		"no_exist": "Mensagem de contato não existe",
+		"del_no_exist": "Não existem mensagens para eliminar",
+		"create_permission": "Não tem permissões para criar uma mensagem de contato",
+		"save_error": "Não foi possível guardar a mensagem de contato",
+		"access_permission": "Não tem permissões para aceder a esta mensagem de contato"
+	},
+	"contacts": {
+		"del_permission": "Não tem permissão para eliminar estas mensagens",
+		"no_exist": "Não existem mensagens de contato",
+		"del_no_exist": "Não existem mensagens para eliminar",
+		"access_permission": "Não tem permissões para aceder a esta lista de mensagens de contato"
+	},	
+	"signup": {
+		"invalid_data": "Deve fornecer pelo menos o email, nome, palavra-chave e o seu perfil.",
+		"token_used": "O código de docente fornecido já foi utilizado ou não existe",
+		"email_used": "O email fornecido já foi utilizado",
+        "invalid_confirm_token": "O código de confirmação fornecido não é válido.",
+        "already_confirmed": "A sua conta está ativada"
+	},
+	"user": {
+		"edit_permission": "Não permissões para alterar este utilizador.",
+		"password_changed": "Palavra-passe foi modificada com sucesso.",
+		"del_no_exist": "Não existem utilizadores para eliminar",
+		"del_permission": "Não tem permissões para eliminar utilizadores",
+		"no_exist": "Utilizador fornecido não existe"
+	},
+	"feedback": {
+		"missing_fields": "Deve preencher todos os campos obrigatórios."
+	},
+	"asyncValidate": {
+		"title": {
+			"exists": "Já existe um recurso com esse título"
+		},
+		"link": {
+			"exists": "Já existe um recurso com esse endereço"
+		}
+	}
+}

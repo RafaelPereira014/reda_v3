@@ -1,0 +1,26 @@
+.floatnone{
+
+	@include media(xsmall-only){ //768px/16px
+		&__xs{
+			clear: both;
+		}
+	}
+
+	@include media(small-only){ //768px/16px  992/16
+		&__sm{
+			clear: both;
+		}
+	}
+
+	@include media(medium-only){ //992px/16px  1200/16
+		&__md{
+			clear: both;
+		}
+	}
+
+	@include media(large-up){ //1200/16
+		&__lg{
+			clear: both;
+		}
+	}
+}

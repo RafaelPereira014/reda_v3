@@ -1,0 +1,147 @@
+.search-form{
+	width:100%;
+	/* margin-bottom:20px; */
+	text-align: left;
+
+	.tags-search{
+		display:block;
+		margin-bottom:10px;
+		min-height:39px;
+
+		input{
+			height:38px;
+			width: 80%;
+		}
+	}
+
+	input,
+	select,
+	button{
+		height:40px;
+		width:100%;
+		color:$body-color;
+		z-index:0!important;
+
+		&:not(.react-tagsinput-input){
+			margin-bottom:10px!important;
+		}
+	}
+}
+
+/* .filter-container{
+	.search-form{
+		margin-bottom:30px;
+		padding-bottom:15px;
+	}
+} */
+
+/* LIST SEARCH */
+@include media(small-down){
+	.resources-search{		
+		display:block!important;
+		.single-search{
+			margin-top:0;
+			margin-bottom:15px;
+		}		
+	}
+}
+@include media(medium-up){
+	.resources__page{
+		&:not(.my-resources){
+			.resources-search{
+				display:none!important; 
+			}
+		}
+
+		&.my-resources{
+			.resources-search{
+				margin:0 auto;
+				margin-bottom:30px;
+
+				.single-search{
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+.hints-search{
+	margin-left:0!important;
+}
+
+/* FILTERS SEARCH */
+/*search near filters*/
+@include media(small-down){
+	.filter-search-container{	
+		display:none; 
+	}
+}
+
+
+.tags-search{
+	display:inline-block;
+}
+
+//	=======================================================================
+//	Search Bar
+//	=======================================================================
+.single-search{
+	margin:0 auto 30px;
+	text-align:center;
+	z-index:0!important;
+
+	display:block!important;
+	
+	input[type='text'],
+	button{
+		
+		width:auto;
+		border-radius:0;
+		height:40px;
+	}
+
+	&:not(.resources-search){
+
+		margin:0!important;
+		text-align:left;
+
+		@include media(small-down){
+			padding: 0 15px!important;
+		}
+
+		.tags-search{
+			max-width:500px!important;
+			width:100%!important;
+
+			@include media(small-down){
+	
+				& + .cta{
+					width: 100%;
+					margin-bottom:20px!important;			
+				}
+			}
+		}
+	}
+
+	.tags-search{
+		max-width:150px;
+		width:auto;
+
+		input{
+			height:39px;
+		}
+	}
+
+	.form-control{
+		display:inline-block;
+	}
+
+	@include media(small-down){
+		
+		input[type='text']{
+		    max-width: 160px;
+		}
+	}
+}

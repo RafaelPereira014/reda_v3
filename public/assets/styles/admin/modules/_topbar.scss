@@ -1,0 +1,11 @@
+.top-bar{
+    background-color: cv($dashboard-header-color);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    position:fixed;
+    top:0;
+    left:300px;
+    right:0;
+    padding:20px;
+    height:80px;
+    z-index: 1;
+}

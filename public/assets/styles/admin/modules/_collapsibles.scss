@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn__collapse{
+    border:none;
+    background: none;
+    position: absolute;
+
+    right:0;
+    top:15px;
+
+    &:active,
+    &:focus{
+        outline-color: $green;
+    }
+}

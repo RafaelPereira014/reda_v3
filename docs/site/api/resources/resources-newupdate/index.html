@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Create or Update - REDA</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Create or Update";
+    var mkdocs_page_input_path = "api\\resources\\resources-newupdate.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> REDA</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../nginx/">Webserver Config</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../api/">Getting Started</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Authentication</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signup/">Sign Up</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signup-confirmation/">Sign Up Confirmation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signin/">Sign In</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/profile/">Profile</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/update-profile/">Update Profile</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/request-recover/">Request Password Recover</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/change-recover-password/">Change Password</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Resources</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-recent/">Recent</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-highlight/">Highlights</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-related/">Related</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-comments/">Resource Comments</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Create or Update</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#request">Request</a></li>
+    
+
+    <li class="toctree-l4"><a href="#headers">Headers</a></li>
+    
+
+    <li class="toctree-l4"><a href="#arguments">Arguments</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#example-request-body">Example request body</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l4"><a href="#response-dependencies">Response Dependencies</a></li>
+    
+
+    <li class="toctree-l4"><a href="#example-response">Example Response</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-asyncValidate/">Async validation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-setHighlight/">Set Highlight</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-setFavorite/">Set Favorite</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-setRating/">Set Rating</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resources-delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Scripts (Operation Proposals)</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/resource-scripts/">Resource Scripts</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/single-details/">Script Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/user-scripts/">User Scripts from Resource</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/createUpdate-list/">Create or Update List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/createUpdate-single/">Create or Update one</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/scripts-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/scripts-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Applications</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/create-update/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/create-update/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Comments</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/create-update/">Add New</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/pending/">Get pending</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/check-badwords/">Has Bad Words</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/approved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Terms</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Taxonomies</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/terms/">Terms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Terms relationships</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">News</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Contacts</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/resource-contacts/">Resource contacts</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/create/">Create</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/mark-read/">Mark as read</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Approval Messages</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../messages/list/">List</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Feedback</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feedback/send/">Send form data</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">REDA</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Resources &raquo;</li>
+        
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>Create or Update</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This is the specification to create a new resource or update.</p>
+<h3 id="request">Request</h3>
+<p>Use the <strong>POST</strong> method in the following URL to create:<br />
+<code>https://reda-sta.azores.gov.pt/api/resources/</code></p>
+<p>Use the <strong>PUT</strong> method in the following URL to update:<br />
+<code>https://reda-sta.azores.gov.pt/api/resources/:slug</code></p>
+<h3 id="headers">Headers</h3>
+<ul>
+<li><strong>redauid</strong> &lt;string&gt; <br />
+   Access token to insert new data</li>
+</ul>
+<h3 id="arguments">Arguments</h3>
+<p>If it is an update, must provide the routing parameter:</p>
+<ul>
+<li><strong>:slug</strong> &lt;string&gt;<br />
+   Resource slug to update</li>
+</ul>
+<p>Resource information (JSON Body):  </p>
+<ul>
+<li><strong>title</strong> &lt;string&gt;<br />
+   Resource Title</li>
+<li><strong>author</strong> &lt;string&gt;<br />
+   Resource Author</li>
+<li><strong>organization</strong> &lt;string&gt;<br />
+   Author organization</li>
+<li><strong>tags</strong> &lt;array&gt;<br />
+   Array of tags text or id</li>
+<li><strong>format</strong> &lt;obj&gt;<br />
+   Format object with ID property</li>
+<li><strong>isOnline</strong> &lt;bool&gt;<br />
+   Inform if this resource has a localization online</li>
+<li><strong>file</strong> &lt;obj&gt;<br />
+   File object with <code>data</code>, <code>size</code> and <code>extension</code> properties.<br />
+   You can also add the <code>id</code> property to avoid create a new image that already exists.</li>
+<li><strong>thumbnail</strong> &lt;obj&gt;
+   Thumbnail object with <code>data</code>, <code>size</code> and <code>extension</code> properties.<br />
+   You can also add the <code>id</code> property to avoid create a new image that already exists.  </li>
+<li><strong>link</strong> &lt;string&gt;<br />
+   Link to the resource. Not needed if there is an embed code</li>
+<li><strong>embed</strong> &lt;string&gt; <br />
+   Embed code of the resource. Not needed if there is a link</li>
+<li><strong>access</strong> &lt;array&gt;<br />
+   Array of access modes IDs</li>
+<li><strong>techResources</strong> &lt;string&gt;<br />
+   Text with the technical requirements</li>
+<li><strong>description</strong> &lt;string&gt;<br />
+   Resource description</li>
+<li><strong>language</strong> &lt;obj&gt;<br />
+   Language object with ID property</li>
+<li><strong>years</strong> &lt;array&gt;<br />
+   Array of years IDs for filtering</li>
+<li><strong>macro</strong> &lt;array&gt; <br />
+   Array of macro areas IDs </li>
+<li><strong>subjects</strong> &lt;array&gt; <br />
+   Array of subjects IDs </li>
+<li><strong>domains</strong> &lt;array&gt;<br />
+   Array of domains IDs </li>
+<li><strong>op_proposal</strong> &lt;string&gt;<br />
+   Operation proposal description  </li>
+<li><strong>script_file</strong> &lt;obj&gt;<br />
+   File object with <code>data</code>, <code>size</code> and <code>extension</code> properties to append to the operation proposal.<br />
+   You can also add the <code>id</code> property to avoid create a new image that already exists.  </li>
+<li><strong>accept_terms</strong> &lt;bool&gt;<br />
+   To check the terms were accepted</li>
+</ul>
+<h4 id="example-request-body">Example request body</h4>
+<pre><code>{
+   &quot;exclusive&quot;: true,
+   &quot;access&quot;: [
+      29712
+   ],
+   &quot;isOnline&quot;: false,
+   &quot;isFile&quot;: true,
+   &quot;tags&quot;: [
+      &quot;foo&quot;,
+      &quot;bar&quot;
+   ],
+   &quot;title&quot;: &quot;Teste&quot;,
+   &quot;author&quot;: &quot;teste1&quot;,
+   &quot;organization&quot;: &quot;teste&quot;,
+   &quot;format&quot;: {
+      &quot;id&quot;: 29708,
+      &quot;title&quot;: &quot;Imagem&quot;,
+      &quot;slug&quot;: &quot;image-1&quot;,
+      &quot;icon&quot;: null,
+      &quot;color&quot;: &quot;#0066ff&quot;,
+      &quot;type&quot;: &quot;image&quot;,
+      &quot;created_at&quot;: &quot;2018-12-18T18:34:00.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2019-01-02T15:29:14.000Z&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;taxonomy_id&quot;: 10,
+      &quot;image_id&quot;: 4,
+      &quot;parent_id&quot;: null,
+      &quot;hasResources&quot;: 1,
+      &quot;Relationship&quot;: []
+   },
+   &quot;duration&quot;: null,
+   &quot;file&quot;: {
+      &quot;id&quot;: null,
+      &quot;name&quot;: &quot;audiovis&quot;,
+      &quot;extension&quot;: &quot;png&quot;,
+      &quot;data&quot;: &lt;base64&gt;,
+      &quot;size&quot;: 25261
+   },
+    &quot;techResources&quot;: &quot;foobar&quot;,
+    &quot;description&quot;: &quot;foobar&quot;,
+    &quot;language&quot;: {
+      &quot;id&quot;: 29697,
+      &quot;title&quot;: &quot;Inglês&quot;,
+      &quot;slug&quot;: &quot;ingles-1&quot;,
+      &quot;icon&quot;: null,
+      &quot;color&quot;: null,
+      &quot;type&quot;: null,
+      &quot;created_at&quot;: &quot;2018-12-18T18:33:58.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2018-12-18T18:33:58.000Z&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;taxonomy_id&quot;: 11,
+      &quot;image_id&quot;: null,
+      &quot;parent_id&quot;: null,
+      &quot;hasResources&quot;: 1,
+      &quot;Relationship&quot;: []
+    },
+    &quot;thumbnail&quot;: {
+      &quot;id&quot;: null,
+      &quot;name&quot;: &quot;design_com&quot;,
+      &quot;extension&quot;: &quot;png&quot;,
+      &quot;data&quot;: &lt;base64&gt;,
+      &quot;size&quot;: 76348 
+    },
+    &quot;years&quot;: [
+        5270
+    ],
+    &quot;terms&quot;: [
+        2,
+        4,
+        3,
+        8,
+        5270
+    ],
+    &quot;subjects&quot;: [
+        2
+    ],
+    &quot;macro&quot;: [
+        4
+    ],
+    &quot;domains&quot;: [
+        3,
+        8
+    ],
+    &quot;op_proposal&quot;: &quot;foobarfoobar&quot;,
+    &quot;script_file&quot;: {
+      &quot;id&quot;: null,
+      &quot;name&quot;: &quot;ciencias_socio1&quot;,
+      &quot;extension&quot;: &quot;png&quot;,
+      &quot;data&quot;: &lt;base64&gt;,
+      &quot;size&quot;: 76348,
+      &quot;fullResult&quot;: &lt;blob&gt;
+   },
+   &quot;accept_terms&quot;: true
+}
+</code></pre>
+
+<h3 id="response-dependencies">Response Dependencies</h3>
+<p>Must be the resource owner or an administrator.</p>
+<h3 id="example-response">Example Response</h3>
+<pre><code>{
+  &quot;result&quot;: [
+    {
+      &quot;status&quot;: true,
+      &quot;id&quot;: 1766,
+      &quot;title&quot;: &quot;Teste&quot;,
+      &quot;slug&quot;: &quot;teste-13&quot;,
+      &quot;description&quot;: &quot;foobar&quot;,
+      &quot;duration&quot;: null,
+      &quot;author&quot;: &quot;teste1&quot;,
+      &quot;organization&quot;: &quot;teste&quot;,
+      &quot;email&quot;: null,
+      &quot;highlight&quot;: false,
+      &quot;exclusive&quot;: true,
+      &quot;embed&quot;: null,
+      &quot;link&quot;: null,
+      &quot;techResources&quot;: &quot;foobar&quot;,
+      &quot;user_id&quot;: 20,
+      &quot;approved&quot;: 0,
+      &quot;approvedScientific&quot;: 0,
+      &quot;approvedLinguistic&quot;: 0,
+      &quot;type_id&quot;: 2,
+      &quot;image_id&quot;: 162,
+      &quot;accepted_terms&quot;: true,
+      &quot;updated_at&quot;: &quot;2019-06-13T16:23:57.846Z&quot;,
+      &quot;created_at&quot;: &quot;2019-06-13T16:23:57.846Z&quot;
+    }
+  ]
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../resources-asyncValidate/" class="btn btn-neutral float-right" title="Async validation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../resources-comments/" class="btn btn-neutral" title="Resource Comments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../resources-comments/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../resources-asyncValidate/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.terms-page{
+	padding-bottom:30px;
+
+	ol,ul{
+		font-family: $opensans;
+		margin-top:10px;
+
+		li{			
+			margin-bottom:15px;
+		}
+	}
+
+	p,
+	li{
+		line-height:1.5;
+	}
+
+	p{
+		margin-bottom:15px;
+	}
+
+	h1,h5{
+		margin-bottom:30px;
+		margin-top:45px;
+	}
+
+	.license{
+		margin: 40px 0;
+		text-align: center;
+
+		a{
+			display:inline-block;
+
+			img{
+				margin:0 auto;
+			}
+		}
+	}
+
+	a{
+		color:$green;
+	}
+}

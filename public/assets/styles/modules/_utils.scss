@@ -1,0 +1,170 @@
+.light-background{
+	background-color:$light-background;
+}
+
+.loading{
+	@include animation(rotate 1s linear infinite)
+}
+
+@include keyframes(rotate) {
+  from {
+    @include transform(rotate(0));
+    @include transform-origin(100% 100%);
+  }
+  to {
+    @include transform(rotate(360deg));
+	@include transform-origin(100% 100%);
+  }
+}
+
+#nocando{
+  text-align: center;
+  margin:0;
+  padding:30px 0;
+
+  h1{
+    margin-top:0;
+  }
+
+  a{
+    font-weight:bold;
+    color:#a94442;
+    text-decoration: underline;
+  }
+}
+
+/*.transition-appear {
+   @include opacity(0.01);
+}
+
+.transition-appear.transition-appear-active {
+   @include opacity(1);
+   transition: opacity 500ms ease-in;
+}*/
+
+.fRight{
+  float:right;
+}
+.fLeft{
+  float:left;
+}
+.floating{
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+
+
+
+/**
+ * TEXT
+ */
+.white-text{
+  color:white;
+
+  h1,h2,h3,h4,h5,h6{
+    color:white;
+    margin-bottom:30px;
+
+    /* & + p{
+      margin-bottom:60px;
+    } */
+  }
+}
+
+.link-effect{
+  &:hover{
+    cursor:pointer;
+  }
+}
+
+a[href^="mailto:"]:not(.cta){
+  text-decoration: underline;
+  @include transition(all 0.3s ease);
+  color:$body-color;
+
+  &:hover{
+    @include opacity(0.5);
+  }
+}
+
+.block{
+  display:block;
+  width:100%;
+}
+
+.de-emphasize{
+  font-weight:400;
+}
+
+p{
+  font:{
+    family: $opensans;
+  }
+}
+
+.spaced__title{
+  text-align: center;
+  margin:60px 0 60px;
+}
+
+//
+//  IMAGES
+//
+.image-preview{
+  max-width:300px;
+  max-height:300px;
+  margin:0 15px 30px;
+}
+
+//
+//  Required element
+//
+.required{
+  position:relative;
+  &:after{
+    content: '*';
+    position:absolute;
+    top:0;
+    right:-10px;
+    color:red;
+    @include font-size(18px);
+    line-height:1;
+  }
+}
+
+//
+//  Disabled element
+//
+button,a{
+  &:disabled{
+    cursor: not-allowed!important;
+  }
+}
+
+//
+//  Colors
+//  
+.color{
+  &-primary{
+    color:$green;
+  }
+
+  &-secundary{
+    color:$light-green;
+  }
+}
+
+//
+//  TABLES
+//
+.valign{
+  &-middle{
+    td{
+       vertical-align: middle!important;
+     }   
+  }
+}

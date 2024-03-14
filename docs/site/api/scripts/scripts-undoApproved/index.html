@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Undo Moderation - REDA</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Undo Moderation";
+    var mkdocs_page_input_path = "api\\scripts\\scripts-undoApproved.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> REDA</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../nginx/">Webserver Config</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../api/">Getting Started</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Authentication</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signup/">Sign Up</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signup-confirmation/">Sign Up Confirmation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signin/">Sign In</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/profile/">Profile</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/update-profile/">Update Profile</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/request-recover/">Request Password Recover</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/change-recover-password/">Change Password</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Resources</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-recent/">Recent</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-highlight/">Highlights</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-related/">Related</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-comments/">Resource Comments</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-newupdate/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-asyncValidate/">Async validation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setHighlight/">Set Highlight</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setFavorite/">Set Favorite</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setRating/">Set Rating</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Scripts (Operation Proposals)</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resource-scripts/">Resource Scripts</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../single-details/">Script Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../user-scripts/">User Scripts from Resource</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../createUpdate-list/">Create or Update List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../createUpdate-single/">Create or Update one</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../scripts-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Undo Moderation</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#request">Request</a></li>
+    
+
+    <li class="toctree-l4"><a href="#headers">Headers</a></li>
+    
+
+    <li class="toctree-l4"><a href="#arguments">Arguments</a></li>
+    
+
+    <li class="toctree-l4"><a href="#example-response">Example Response</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Applications</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/create-update/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/create-update/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Comments</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/create-update/">Add New</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/pending/">Get pending</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/check-badwords/">Has Bad Words</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/approved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Terms</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Taxonomies</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/terms/">Terms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Terms relationships</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">News</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Contacts</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/resource-contacts/">Resource contacts</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/create/">Create</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../contacts/mark-read/">Mark as read</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Approval Messages</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../messages/list/">List</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Feedback</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feedback/send/">Send form data</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">REDA</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Scripts (Operation Proposals) &raquo;</li>
+        
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>Undo Moderation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This is the specification to undo a script availability action</p>
+<h3 id="request">Request</h3>
+<p>Use the <strong>PUT</strong> method in the following URL to update:<br />
+<code>https://reda-sta.azores.gov.pt/api/scripts/approved/:id/undo</code></p>
+<h3 id="headers">Headers</h3>
+<ul>
+<li><strong>redauid</strong> &lt;string&gt;<br />
+   Access token to update</li>
+</ul>
+<h3 id="arguments">Arguments</h3>
+<p>Routing parameter</p>
+<ul>
+<li><strong>:id</strong> &lt;int&gt;<br />
+   Script id to update</li>
+</ul>
+<p>JSON Body</p>
+<ul>
+<li><strong>data</strong> &lt;obj&gt;<br />
+   Previous data in order to recover from action. Should have the following structure:</li>
+</ul>
+<pre><code>{
+   &quot;data&quot;: {
+      &quot;approvedScientific&quot;: &lt;int&gt;,
+      &quot;approvedLinguistic&quot;: &lt;int&gt;,
+      &quot;approved&quot;: &lt;int&gt;,
+      &quot;status&quot;: &lt;int&gt;
+   } 
+}
+</code></pre>
+
+<h3 id="example-response">Example Response</h3>
+<pre><code>{
+  &quot;result&quot;: {
+      &quot;id&quot;: 7,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;operation&quot;: &quot;Em \&quot;A representação dos números usando notação científica\&quot;, utilize a opção \&quot;Recordar\&quot;  para aceder a uma simulação que permite escrever um número racional positivo em notação científica. Repare que há uma secção para recordar potências de 10.&quot;,
+      &quot;approved&quot;: 0,
+      &quot;approvedScientific&quot;: 0,
+      &quot;approvedLinguistic&quot;: 0,
+      &quot;status&quot;: true,
+      &quot;main&quot;: false,
+      &quot;accepted_terms&quot;: false,
+      &quot;created_at&quot;: &quot;2016-07-19T16:23:09.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2019-06-14T15:01:33.044Z&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;resource_id&quot;: 12,
+      &quot;user_id&quot;: 5,
+      &quot;User&quot;: {
+         &quot;id&quot;: 5,
+         &quot;email&quot;: &quot;reda_user@edu.azores.gov.pt&quot;
+      }
+   },
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../delete/" class="btn btn-neutral float-right" title="Delete One or Collection">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../scripts-setApproved/" class="btn btn-neutral" title="Moderation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../scripts-setApproved/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

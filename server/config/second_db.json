@@ -1,0 +1,69 @@
+{
+    "development": {
+        "username": "root",
+        "password": "123",
+        "database": "reda",
+        "host": "localhost",
+        "dialect": "mysql",
+        "maxConcurrentQueries": 100,
+        "define": {
+            "underscored": true,
+            "charset": "utf8",
+            "collate": "utf8_general_ci"
+        },
+        "typeValidation": true,
+        "omitNull": false,
+        "paranoid": true 
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "nodejs",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "staging": {
+        "username": "importer",
+        "password": "Azores%100",
+        "database": "reda",
+        "host": "192.168.40.63",
+        "dialect": "mysql",
+        "maxConcurrentQueries": 100,
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "idle": 1000
+        },
+        "define": {
+            "underscored": true,
+            "charset": "utf8",
+            "collate": "utf8_general_ci"
+        },
+        "typeValidation": true,
+        "omitNull": false,
+        "paranoid": true,
+        "logging": false
+    },
+    "production": {
+        "username": "importer",
+        "password": "Azores%100",
+        "database": "reda",
+        "host": "192.168.40.63",
+        "dialect": "mysql",
+        "maxConcurrentQueries": 100,
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "idle": 1000
+        },
+        "define": {
+            "underscored": true,
+            "charset": "utf8",
+            "collate": "utf8_general_ci"
+        },
+        "typeValidation": true,
+        "omitNull": false,
+        "paranoid": true,
+        "logging": false
+    }
+}

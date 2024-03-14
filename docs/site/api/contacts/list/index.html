@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>List - REDA</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "List";
+    var mkdocs_page_input_path = "api\\contacts\\list.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> REDA</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../nginx/">Webserver Config</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../api/">Getting Started</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Authentication</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signup/">Sign Up</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signup-confirmation/">Sign Up Confirmation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/signin/">Sign In</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/profile/">Profile</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/update-profile/">Update Profile</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/request-recover/">Request Password Recover</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../user/change-recover-password/">Change Password</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Resources</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-recent/">Recent</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-highlight/">Highlights</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-related/">Related</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-comments/">Resource Comments</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-newupdate/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-asyncValidate/">Async validation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setHighlight/">Set Highlight</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setFavorite/">Set Favorite</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setRating/">Set Rating</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../resources/resources-delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Scripts (Operation Proposals)</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/resource-scripts/">Resource Scripts</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/single-details/">Script Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/user-scripts/">User Scripts from Resource</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/createUpdate-list/">Create or Update List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/createUpdate-single/">Create or Update one</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/scripts-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/scripts-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../scripts/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Applications</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/create-update/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/apps-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../apps/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-list/">Generic List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-month/">This month list</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/create-update/">Create or Update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-setApproved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/tools-undoApproved/">Undo Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/delete/">Delete One or Collection</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Comments</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/create-update/">Add New</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/pending/">Get pending</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/check-badwords/">Has Bad Words</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/approved/">Moderation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../comments/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Terms</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../terms/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Taxonomies</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/search/">Search</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../taxs/terms/">Terms</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Terms relationships</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../relationships/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">News</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/list/">List</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/details/">Details</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/create-update/">Create or update</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../news/delete/">Delete</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Contacts</span>
+    <ul class="subnav">
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">List</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#request">Request</a></li>
+    
+
+    <li class="toctree-l4"><a href="#headers">Headers</a></li>
+    
+
+    <li class="toctree-l4"><a href="#arguments">Arguments</a></li>
+    
+
+    <li class="toctree-l4"><a href="#example-response">Example Response</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../resource-contacts/">Resource contacts</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../create/">Create</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../mark-read/">Mark as read</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Approval Messages</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../messages/list/">List</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Feedback</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feedback/send/">Send form data</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">REDA</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Contacts &raquo;</li>
+        
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>List</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This is the specification for returning a list of contacts made by the authenticated user. If is admin, will show all contacts.</p>
+<h3 id="request">Request</h3>
+<p>Use the <strong>GET</strong> method in the following URL:<br />
+<code>https://reda-sta.azores.gov.pt/api/contacts/user</code></p>
+<h3 id="headers">Headers</h3>
+<ul>
+<li><strong>redauid</strong> &lt;string&gt;<br />
+   Access token to insert new data</li>
+</ul>
+<h3 id="arguments">Arguments</h3>
+<p>Query string</p>
+<ul>
+<li><strong>limit</strong> - optional &lt;int&gt;<br />
+   Limit the list items (default: 9)</li>
+<li><strong>activePage</strong> - optional &lt;int&gt;<br />
+   Inform active page for pagination (default: 1)</li>
+</ul>
+<h3 id="example-response">Example Response</h3>
+<pre><code>{
+  &quot;page&quot;: 1,
+  &quot;totalPages&quot;: 8,
+  &quot;limit&quot;: 9,
+  &quot;count&quot;: 9,
+  &quot;total&quot;: 64,
+  &quot;result&quot;: [
+    {
+      &quot;id&quot;: 1544,
+      &quot;title&quot;: &quot;Célébrités francophones&quot;,
+      &quot;slug&quot;: &quot;celebrites-francophones&quot;,
+      &quot;created_at&quot;: &quot;2018-12-03T00:13:15.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-03T16:43:04.000Z&quot;,
+      &quot;isNew&quot;: 0,
+      &quot;didInteract&quot;: 1,
+      &quot;Contacts&quot;: [
+        {
+          &quot;id&quot;: 142,
+          &quot;description&quot;: &quot;Hello\n\nEste é um belo teste&quot;,
+          &quot;status&quot;: &quot;NEW&quot;,
+          &quot;created_at&quot;: &quot;2019-03-15T17:55:40.000Z&quot;,
+          &quot;updated_at&quot;: &quot;2019-03-15T17:55:40.000Z&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;resource_id&quot;: 1544,
+          &quot;user_id&quot;: 3,
+          &quot;User&quot;: {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;REDA&quot;,
+            &quot;organization&quot;: &quot;REDA&quot;
+          }
+        },
+        {
+          &quot;id&quot;: 137,
+          &quot;description&quot;: &quot;asd&quot;,
+          &quot;status&quot;: &quot;READ&quot;,
+          &quot;created_at&quot;: &quot;2019-02-18T12:34:46.000Z&quot;,
+          &quot;updated_at&quot;: &quot;2019-03-15T17:20:13.000Z&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;resource_id&quot;: 1544,
+          &quot;user_id&quot;: 1507,
+          &quot;User&quot;: {
+            &quot;id&quot;: 1507,
+            &quot;name&quot;: &quot;Marisa Teixeira&quot;,
+            &quot;organization&quot;: &quot;Escola Secundária Jerónimo Emiliano de Andrade&quot;
+          }
+        },
+        {
+          &quot;id&quot;: 136,
+          &quot;description&quot;: &quot;asd&quot;,
+          &quot;status&quot;: &quot;NEW&quot;,
+          &quot;created_at&quot;: &quot;2019-02-18T12:32:45.000Z&quot;,
+          &quot;updated_at&quot;: &quot;2019-02-18T12:32:45.000Z&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;resource_id&quot;: 1544,
+          &quot;user_id&quot;: 3,
+          &quot;User&quot;: {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;REDA&quot;,
+            &quot;organization&quot;: &quot;REDA&quot;
+          }
+        },
+        {
+          &quot;id&quot;: 135,
+          &quot;description&quot;: &quot;asd&quot;,
+          &quot;status&quot;: &quot;NEW&quot;,
+          &quot;created_at&quot;: &quot;2019-02-18T12:30:49.000Z&quot;,
+          &quot;updated_at&quot;: &quot;2019-02-18T12:30:49.000Z&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;resource_id&quot;: 1544,
+          &quot;user_id&quot;: 3,
+          &quot;User&quot;: {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;REDA&quot;,
+            &quot;organization&quot;: &quot;REDA&quot;
+          }
+        },
+        {
+          &quot;id&quot;: 118,
+          &quot;description&quot;: &quot;Cara utilizadora, em primeiro lugar queremos agradecer o seu contributo na partilha de recursos na plataforma REDA. \nVimos, por este meio, solicitar-lhe a correção dos seguintes itens no seu Kahoot “Célébrités Francophones” de forma a podermos validar o seu recurso:\n- retirar o “s” em “célèbres” na frase “Charles Perrault est un homme de lettres français célèbres pour ses…” ;\n- colocar “Le Petit Prince” entre aspas ou a itálico;\n- retirar o acento agudo em Louane Eméra;\n- colocar um acento grave em “célèbre” na frase “Le plus célebre festival de cinéma”;\n- na questão “Avec le film Intouchables, Omar Sy a gagné… ”, a resposta correta não é “le César de meilleur acteur 2012” em vez de “une Victoire de la musique” ?\nGrata pela atenção.\nA Equipa REDA&quot;,
+          &quot;status&quot;: &quot;READ&quot;,
+          &quot;created_at&quot;: &quot;2018-12-07T23:06:50.000Z&quot;,
+          &quot;updated_at&quot;: &quot;2019-03-15T17:20:13.000Z&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;resource_id&quot;: 1544,
+          &quot;user_id&quot;: 1507,
+          &quot;User&quot;: {
+            &quot;id&quot;: 1507,
+            &quot;name&quot;: &quot;Marisa Teixeira&quot;,
+            &quot;organization&quot;: &quot;Escola Secundária Jerónimo Emiliano de Andrade&quot;
+          }
+        },
+        {
+          &quot;id&quot;: 117,
+          &quot;description&quot;: &quot;Cara utilizadora, vimos por este meio agradecer a correção do recurso, no entanto detetámos mais duas situações: é possível corrigir a palavra \&quot;synonime\&quot; em \&quot;Le mot 'Métier' est...\&quot;, opção \&quot;un synonyme de travailleur\&quot;. Aproveitamos para perguntar se, na primeira imagem/apresentação sobre a profissão de 'coiffeur', pretende que o retângulo a vermelho com a resposta 'médecin' esteja sempre a surgir, ao contrário das restantes perguntas, apesar de não ser a resposta correta.\nPor fim, um pequeno pormenor: na resposta \&quot;Le féminin du mot 'Pharmacien' est. Pharmacienne!\&quot; tem um ponto final a seguir à forma verbal do verbo être.\nGrata pela compreensão.\nA Equipa REDA&quot;,
+          &quot;status&quot;: &quot;NEW&quot;,
+          &quot;created_at&quot;: &quot;2018-12-07T22:12:10.000Z&quot;,
+          &quot;updated_at&quot;: &quot;2019-02-18T12:16:20.000Z&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;resource_id&quot;: 1544,
+          &quot;user_id&quot;: 3,
+          &quot;User&quot;: {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;REDA&quot;,
+            &quot;organization&quot;: &quot;REDA&quot;
+          }
+        }
+      ],
+      &quot;Type&quot;: {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;Recursos&quot;,
+        &quot;slug&quot;: &quot;RESOURCES&quot;,
+        &quot;created_at&quot;: &quot;2019-02-04T10:37:24.000Z&quot;,
+        &quot;updated_at&quot;: &quot;2019-02-04T10:37:24.000Z&quot;,
+        &quot;deleted_at&quot;: null
+      }
+    }
+  ]
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../resource-contacts/" class="btn btn-neutral float-right" title="Resource contacts">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../news/delete/" class="btn btn-neutral" title="Delete"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../news/delete/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../resource-contacts/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

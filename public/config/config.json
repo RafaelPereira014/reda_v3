@@ -1,0 +1,11 @@
+{
+	"files": "/files",
+	"inner_files": "/assets/files",
+	"graphics": "/assets/graphics",
+	"formatIcons": "/assets/graphics/icons",
+	"icons": "/assets/graphics/icons",
+	"icons_placeholder": "/assets/graphics/placeholder",
+	"background_images": "/assets/graphics/bg",
+	"logos": "/assets/graphics/logos",
+	"group_images": "/assets/graphics/group"
+}

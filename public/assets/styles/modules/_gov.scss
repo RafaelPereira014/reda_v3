@@ -1,0 +1,84 @@
+.gov-header {
+    width: 100%;
+    min-height: 36px;
+    background: #000;
+    border-top: solid 1px #16374b;
+    border-bottom: solid 1px #001826;
+    box-sizing: border-box;
+    background: #082c42;
+    background: -moz-linear-gradient(top,#082c42 0,#0e3d5a 100%,#0e3d5a 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#082c42),color-stop(100%,#0e3d5a),color-stop(100%,#0e3d5a));
+    background: -webkit-linear-gradient(top,#082c42 0,#0e3d5a 100%,#0e3d5a 100%);
+    background: -o-linear-gradient(top,#082c42 0,#0e3d5a 100%,#0e3d5a 100%);
+    background: -ms-linear-gradient(top,#082c42 0,#0e3d5a 100%,#0e3d5a 100%);
+    background: linear-gradient(to bottom,#082c42 0,#0e3d5a 100%,#0e3d5a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#082c42', endColorstr='#0e3d5a', GradientType=0);
+}
+
+.gov-header header, .gov-header header nav {
+    height: 100%;
+}
+
+.gov-header ul {
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.gov-header ul li:first-child {
+    padding-left: 0;
+}
+.gov-logo.gov-logo-mobile, .social-networks-bottom {
+    display: none;
+}
+
+
+.gov-header ul li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: $opensans;
+
+    @include media(xsmall-only){
+        padding-left:5px;
+        padding-right:5px;
+    }
+}
+
+.gov-header .gov-logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gov-header ul a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 36px;
+
+    @include media(xsmall-only){
+        line-height:30px;
+    }
+}
+
+.gov-header ul a:hover {
+    text-decoration: underline;
+}
+
+@include media(small-down){
+    .gov-header{
+        .gov-logo{
+            display:block;
+            text-align:center;
+            padding:0;
+        }
+    }
+}

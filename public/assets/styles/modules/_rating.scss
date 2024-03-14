@@ -1,0 +1,8 @@
+.rating,
+.rating-wrapper{
+    &.disabled{
+        span > span{
+            cursor:default!important;
+        }
+    }
+}

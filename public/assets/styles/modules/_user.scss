@@ -1,0 +1,111 @@
+.user{
+	&-resume{
+		text-align:center;
+		color:white;
+		padding:10px 0 80px;
+		.user-image{
+			margin:0 auto;
+			width:100px;
+			height:100px;
+		}
+
+		h4{
+			color:white;
+			margin-bottom:30px;
+
+			div{
+				display:inline-block;
+				position:relative;
+			}
+		}
+
+		.input__span{
+			padding:0 50px 0 0;
+			background:none;
+			border-left:transparent;
+			border-top:transparent;
+			border-right:transparent;
+			border-bottom:1px solid white;
+			outline:none;
+			text-align:initial;
+
+			@include transition(all 0.5s ease);
+
+			&[contentEditable="false"]{
+				border:transparent;
+				text-align:center;
+				padding: 0;
+				& + .user__actions{
+					right:-30px;
+				}
+			}
+		}
+
+		.user__actions{
+			position:absolute;
+			right:0;
+			top:0;
+			@include transition(all 0.5s ease);
+			line-height:1;
+
+			i{				
+				color:white;
+				@include font-size(14px);
+
+				& + i{
+					margin-left:10px;
+				}
+
+				@include transition(all 0.3s ease);
+				&:hover{
+					cursor: pointer;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+
+	&-identification{
+		position:relative;
+		padding-left:10px;
+
+		&:before{
+			content:"|";
+			position:absolute;
+			left:0;
+			top:5px;
+
+			@include media(small-down){
+				content:"";
+			}
+		}
+	}
+
+	&-form{
+		padding:15px 0 30px;
+
+		footer{
+			margin-top:30px;
+		}
+	}
+
+	&-list{
+		td,th{
+			line-height:2!important;
+		}
+
+		td{
+			& > span{
+				display: block;
+			}
+		}
+	}
+}
+
+.users{
+	&__page{
+		h6{
+			
+		}
+	}
+}
