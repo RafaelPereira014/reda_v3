@@ -12,7 +12,7 @@ live-site : https://reda.azores.gov.pt/
 
 ***Problemas a resolver:***
 - Erro na introdução de aplicações na primeira vez que se cria a aplicação; :hourglass:
-- Erro nos recursos presentes na "minha conta". Aparecem apenas os recursos do ultimo usuario que realizou uma alteração; :hourglass:
+
 
 
 
