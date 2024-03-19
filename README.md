@@ -8,6 +8,7 @@ live-site : https://reda.azores.gov.pt/
 - Correção do redirecionamento de alguns botões presentes na plataforma :white_check_mark:
 - Erro na introdução de imagem na primeira vez que se cria o recurso; :white_check_mark:
 - Pesquina nao volta para as palavras chave que pesquisou; :white_check_mark:
+- Adicionado botão de introdução de novo recurso; :white_check_mark:
 
 ***Problemas a resolver:***
 - Erro na introdução de aplicações na primeira vez que se cria a aplicação; :hourglass:
